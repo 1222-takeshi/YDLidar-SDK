@@ -676,7 +676,8 @@ bool CYdLidar::doProcessSimple(LaserScan &outscan)
           isNetTOFLidar(m_LidarType) ||
           isGSLidar(m_LidarType) ||
           isSDMLidar(m_LidarType) ||
-          isDTSLidar(m_LidarType))
+          isDTSLidar(m_LidarType) ||
+          isTIALidar(m_LidarType))
         {
           range = static_cast<float>(global_nodes[i].dist / 1000.f);
         }
